@@ -1,2 +1,14 @@
 python3 -m venv venv
 source venv/bin/activate
+
+pip freeze > requirements.txt
+python3 -m venv venv
+source venv/bin/activate
+
+
+echo "# abc" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/bryceroche/abc.git
+git push -u origin master
